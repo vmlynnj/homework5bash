@@ -14,6 +14,6 @@ echo $PATH
 export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
 echo $HADOOP_CLASSPATH
 cd ./homework5Input
-hadoop com.sun.tools.javac.Main Driver.java
-jar cvf homework.jar Driver*.class
-hadoop jar homework.jar Driver homework5Input homework5Output
+hadoop com.sun.tools.javac.Main *.java
+jar cvf homework.jar *.class
+hadoop jar homework.jar Kmer homework5Input homework5Output 3

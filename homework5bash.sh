@@ -1,7 +1,7 @@
 #!/bin/bash
 
-mkdir /user/homework5Input
-cd /user/homework5Input
+mkdir ./homework5Input
+cd ./homework5Input
 for x in {1..22}; do wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr$x.fa.gz; done;
 wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chrX.fa.gz
 wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chrY.fa.gz
